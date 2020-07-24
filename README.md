@@ -20,30 +20,30 @@
 
 | 编号 | 坏味道名称 | 腐烂点 |
 |:-------------|:---------------|:-------------|
-| $1 | | |
+| $1 | Lazy Element | `get and set` |
 | $2 | Repeated Switches | `case ENGINEER:` |
 | $3 | Long Function | `statement()` |
-| $4 | | |
+| $4 | Shotgun Surgery | `if (interests > 300) { vs. if (amount > 300) {` |
 | $5 | Loops | `for (int i = 0; i < input.length; i++) {` |
 | $6 | Refused Bequest | `layEgg() vs. milk()` |
 | $7 | Long Parameter List | `public User(String name, Date birthday, String location, String username, String phoneNumber, String hobbies) {` |
-| $8 | Feature Envy | `Application.count++;` |
+| $8 | Global Data | `Application.count++;` |
 | $9 | Message Chains | `hotels.stream().flatMap(hotel -> hotel.getRooms().stream())` |
 | $10 | Comments | `//        output.append("Date - " + order.getDate();` |
 | $11 | Speculative Generality | `HumanAble` |
-| $12 | | |
+| $12 | Feature Envy | `.mapToDouble(lineItem -> lineItem.getPrice() * lineItem.getQuantity())` |
 | $13 | Mysterious Name | `String ad; // 地址` |
 | $14 | Temporary Field | `private List<ProductBatch> productBatchesToExpired;` |
 | $15 | Mutable Data? | `missing code?` |
 | $16 | Data Clumps | `this.buyerName = buyerName;` |
 | $17 | Middle Man | `public Person getManager(){return department.getManager();}` |
-| $18 | Shotgun Surgery | `Printer` |
+| $18 | Duplicated Code | `Printer` |
 | $19 | Large Class | `Poker` |
 | $20 | Primitive Obsession | `private String getCity(String address) {return address.substring(address.indexOf("省") + 1, address.indexOf("市"));}` |
 | $21 | Data Class | `Building, Community, Person, Room` |
 | $22 | Insider Trading | `return motorist.getTitle() + " " + motorist.getFirstName() + " " + motorist.getFirstName() + ", " + Integer.toString(getPoints());` |
 | $23 | Alternative Classes With Different Interfaces | `checkIp() vs. isValidIp()` |
-| $24 | Divergent Change | `toXml() vs toText()` |
+| $24 | Divergent Change | `toXml() vs. toText()` |
 
 
 #### 作业要求
