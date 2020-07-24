@@ -20,8 +20,46 @@
 
 | 编号 | 坏味道名称 | 腐烂点 |
 |:-------------|:---------------|:-------------|
-| $1 | Long Method | `OrderReceipt.printReceipt()` |
-
+| $1 | | |
+| $2 | Repeated Switches | `case ENGINEER:
+                return monthlySalary;
+            case SALESMAN:
+                return monthlySalary + commission;
+            case MANAGER:
+                return monthlySalary + bonus;
+            default:
+                throw new RuntimeException("Invalid employee");` |
+| $3 | | |
+| $4 | | |
+| $5 | Loops | `for (int i = 0; i < input.length; i++) {` |
+| $6 | Refused Bequest | `layEgg() vs. milk()` |
+| $7 | Long Parameter List | `public User(String name, Date birthday, String location, String username, String phoneNumber, String hobbies) {` |
+| $8 | Feature Envy | `Application.count++;` |
+| $9 | Message Chains | `hotels.stream()
+                .flatMap(hotel -> hotel.getRooms().stream())
+                .filter(room -> room.getRoomType().getType() == roomType)
+                .filter(room ->
+                        IntStream.of(days).allMatch(day ->
+                                new RoomChecker().isRoomBooked(room, DateUtil.getDateAfter(date, day - 1))))
+                .findAny();` |
+| $10 | Comments | `//        output.append("Date - " + order.getDate();` |
+| $11 | Speculative Generality | `HumanAble` |
+| $12 | | |
+| $13 | Mysterious Name | `String ad; // 地址` |
+| $14 | | |
+| $15 | Temporary Field | `private double totalPrice;` |
+| $16 | Data Clumps | `this.buyerName = buyerName;
+        this.buyerPhoneNumber = buyerPhoneNumber;
+        this.buyerAddress = buyerAddress;` |
+| $17 | | |
+| $18 | | |
+| $19 | Large Class | `Poker` |
+| $20 | | |
+| $21 | Data Class | `Building, Community, Person, Room` |
+| $22 | Insider Trading | `return motorist.getTitle() + " " + motorist.getFirstName()
+                + " " + motorist.getFirstName() + ", " + Integer.toString(getPoints());` |
+| $23 | Alternative Classes With Different Interfaces | `checkIp() vs. isValidIp()` |
+| $24 | | |
 
 
 #### 作业要求
