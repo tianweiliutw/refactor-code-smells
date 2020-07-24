@@ -22,7 +22,7 @@
 |:-------------|:---------------|:-------------|
 | $1 | | |
 | $2 | Repeated Switches | `case ENGINEER:` |
-| $3 | | |
+| $3 | Long Function | `statement()` |
 | $4 | | |
 | $5 | Loops | `for (int i = 0; i < input.length; i++) {` |
 | $6 | Refused Bequest | `layEgg() vs. milk()` |
@@ -33,17 +33,17 @@
 | $11 | Speculative Generality | `HumanAble` |
 | $12 | | |
 | $13 | Mysterious Name | `String ad; // 地址` |
-| $14 | | |
-| $15 | Temporary Field | `private double totalPrice;` |
+| $14 | Temporary Field | `private List<ProductBatch> productBatchesToExpired;` |
+| $15 | Mutable Data? | `missing code?` |
 | $16 | Data Clumps | `this.buyerName = buyerName;` |
-| $17 | | |
-| $18 | | |
+| $17 | Middle Man | `public Person getManager(){return department.getManager();}` |
+| $18 | Shotgun Surgery | `Printer` |
 | $19 | Large Class | `Poker` |
-| $20 | | |
+| $20 | Primitive Obsession | `private String getCity(String address) {return address.substring(address.indexOf("省") + 1, address.indexOf("市"));}` |
 | $21 | Data Class | `Building, Community, Person, Room` |
 | $22 | Insider Trading | `return motorist.getTitle() + " " + motorist.getFirstName() + " " + motorist.getFirstName() + ", " + Integer.toString(getPoints());` |
 | $23 | Alternative Classes With Different Interfaces | `checkIp() vs. isValidIp()` |
-| $24 | | |
+| $24 | Divergent Change | `toXml() vs toText()` |
 
 
 #### 作业要求
